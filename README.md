@@ -1,6 +1,6 @@
 # Healthcare Digital Management System
 
-📌 View the Project Presentation on Canva
+📌 View the Project Presentation on #https://www.canva.com/design/DAGehLs9nMg/_Nt1cqJjvR8v2irnmNC4Eg/edit?utm_content=DAGehLs9nMg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 A comprehensive digital platform for healthcare management that bridges the gap between patients, doctors, pharmacies, and laboratories. This project is a graduation project from the Faculty of Engineering at Palestine Technical University (Khadoorie) and is not licensed for public reuse.
 
