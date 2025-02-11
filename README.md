@@ -1,6 +1,6 @@
-# Healthcare Digital Management System
+# Healthcare Management System In Palestine
 
-📌 View the Project Presentation on Canva
+📌 [View the Project Presentation on Canva](https://www.canva.com/design/DAGehLs9nMg/_Nt1cqJjvR8v2irnmNC4Eg/edit?utm_content=DAGehLs9nMg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 A comprehensive digital platform for healthcare management that bridges the gap between patients, doctors, pharmacies, and laboratories. This project is a graduation project from the Faculty of Engineering at Palestine Technical University (Khadoorie) and is not licensed for public reuse.
 
@@ -53,9 +53,11 @@ The Healthcare Digital Management System is designed to revolutionize digital he
 **Real-time Communication:**
 - Stream.io (Chat & Video)
 - Pusher (Notifications)
+- Vonage
+- Email
 
 **Authentication & Security:**
-- Laravel Analyzer (ID verification & secure authentication)
+- ID Analyzer (ID verification & secure authentication)
 
 ## ⚙️ Installation
 
@@ -136,22 +138,8 @@ The Healthcare Digital Management System is designed to revolutionize digital he
 
 ## 📂 Project Structure
 
-healthcare-management-system/
-├── frontend/  # React.js + Tailwind CSS front-end
-│   ├── public/
-│   ├── src/
-│   ├── package.json
-│   └── README.md  # Front-end specific instructions
-├── backend/  # Laravel back-end
-│   ├── app/
-│   ├── config/
-│   ├── database/
-│   ├── public/
-│   ├── routes/
-│   ├── .env.example
-│   ├── composer.json
-│   └── README.md  # Back-end specific instructions
-└── README.md  # This file
+
+<img width="788" alt="Screenshot 2025-02-11 at 3 39 20 AM" src="https://github.com/user-attachments/assets/56d1f122-21eb-432d-a950-26234250c09d" />
 
 ---
 
