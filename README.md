@@ -1,4 +1,4 @@
-# Healthcare Digital Management System
+# Healthcare Management System In Palestine
 
 📌 [View the Project Presentation on Canva](https://www.canva.com/design/DAGehLs9nMg/_Nt1cqJjvR8v2irnmNC4Eg/edit?utm_content=DAGehLs9nMg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
