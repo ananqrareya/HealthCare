@@ -138,7 +138,6 @@ The Healthcare Digital Management System is designed to revolutionize digital he
 
 
 <img width="788" alt="Screenshot 2025-02-11 at 3 39 20 AM" src="https://github.com/user-attachments/assets/56d1f122-21eb-432d-a950-26234250c09d" />
-  # This file
 
 ---
 
