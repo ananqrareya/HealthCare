@@ -136,22 +136,9 @@ The Healthcare Digital Management System is designed to revolutionize digital he
 
 ## 📂 Project Structure
 
-healthcare-management-system/
-├── frontend/  # React.js + Tailwind CSS front-end
-│   ├── public/
-│   ├── src/
-│   ├── package.json
-│   └── README.md  # Front-end specific instructions
-├── backend/  # Laravel back-end
-│   ├── app/
-│   ├── config/
-│   ├── database/
-│   ├── public/
-│   ├── routes/
-│   ├── .env.example
-│   ├── composer.json
-│   └── README.md  # Back-end specific instructions
-└── README.md  # This file
+
+<img width="788" alt="Screenshot 2025-02-11 at 3 39 20 AM" src="https://github.com/user-attachments/assets/56d1f122-21eb-432d-a950-26234250c09d" />
+  # This file
 
 ---
 
