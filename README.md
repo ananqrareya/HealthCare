@@ -1,131 +1,140 @@
-Healthcare Digital Management System
+# Healthcare Digital Management System
 
 📌 View the Project Presentation on Canva
 
 A comprehensive digital platform for healthcare management that bridges the gap between patients, doctors, pharmacies, and laboratories. This project is a graduation project from the Faculty of Engineering at Palestine Technical University (Khadoorie) and is not licensed for public reuse.
 
-📖 Table of Contents
+## 📖 Table of Contents
 
-Overview
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+  - [Front-end Setup](#front-end-setup)
+  - [Back-end Setup](#back-end-setup)
+- [Running the Application](#running-the-application)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License / Disclaimer](#license-disclaimer)
 
-Features
-
-Technologies
-
-Installation
-
-Front-end Setup
-
-Back-end Setup
-
-Running the Application
-
-Project Structure
-
-Contributing
-
-License / Disclaimer
-
-🏥 Overview
+## 🏥 Overview
 
 The Healthcare Digital Management System is designed to revolutionize digital health in Palestine. It provides an integrated solution for appointment scheduling, medical record management, real-time consultations, and seamless pharmacy/laboratory integrations, combining modern web development with healthcare innovation.
 
-🚀 Features
+## 🚀 Features
 
-✅ Appointment Scheduling – Book in-clinic visits or online consultations effortlessly.✅ Digital Medical Records – Securely store and access patient histories, test results, and prescriptions.✅ Doctor & Clinic Management – Tools for doctors to manage schedules, patient records, and clinic operations.✅ Doctor Reports & Prescriptions – Doctors can generate reports in file format with a special header and write prescriptions.✅ Real-time Communication – Chat & video consultations powered by Stream.io and notifications via Pusher.✅ Automated Notifications – Reminders and alerts to keep users informed.
+- ✅ Appointment Scheduling – Book in-clinic visits or online consultations effortlessly.
+- ✅ Digital Medical Records – Securely store and access patient histories, test results, and prescriptions.
+- ✅ Doctor & Clinic Management – Tools for doctors to manage schedules, patient records, and clinic operations.
+- ✅ Doctor Reports & Prescriptions – Doctors can generate reports in file format with a special header and write prescriptions.
+- ✅ Real-time Communication – Chat & video consultations powered by Stream.io and notifications via Pusher.
+- ✅ Automated Notifications – Reminders and alerts to keep users informed.
 
-🚀 Future Features:🔹 Pharmacy & Laboratory Integration – Electronic prescriptions and lab test requests.🔹 Automate Doctor Account Verification – Integrate data from the medical association to verify doctor credentials using their registration numbers.🔹 Implement Social Interaction Features – Allow users to create posts and engage in discussions.🔹 Introduce Medical Webinars and Educational Sessions – Provide users with access to webinars and educational sessions focused on health topics.🔹 Expand Integration with Insurance Providers – Integrate the system with government healthcare and private insurance companies, enabling users to access their benefits.🔹 Enhance User Interface – Improve the system's design for a more efficient and enjoyable user experience.🔹 Add a Virtual Assistant Feature – Develop an AI-powered chatbot to assist users with scheduling appointments, answering medical inquiries, and providing personalized health information.🔹 Improve Electronic Payment Systems – Integrate advanced online payment options, allowing patients to pay for consultations and bookings seamlessly through the website.
+### 🚀 Future Features:
+- 🔹 Pharmacy & Laboratory Integration – Electronic prescriptions and lab test requests.
+- 🔹 Automate Doctor Account Verification – Integrate data from the medical association to verify doctor credentials.
+- 🔹 Implement Social Interaction Features – Allow users to create posts and engage in discussions.
+- 🔹 Introduce Medical Webinars and Educational Sessions – Provide users with access to health webinars.
+- 🔹 Expand Integration with Insurance Providers – Integrate with government and private insurance companies.
+- 🔹 Enhance User Interface – Improve the design for a better experience.
+- 🔹 Add a Virtual Assistant Feature – Develop an AI-powered chatbot for scheduling and inquiries.
+- 🔹 Improve Electronic Payment Systems – Integrate advanced payment options for consultations.
 
-🛠 Technologies
+## 🛠 Technologies
 
-Front-end:
+**Front-end:**
+- React.js
+- Tailwind CSS
 
-React.js
+**Back-end:**
+- Laravel
+- MySQL
 
-Tailwind CSS
+**Real-time Communication:**
+- Stream.io (Chat & Video)
+- Pusher (Notifications)
 
-Back-end:
+**Authentication & Security:**
+- Laravel Analyzer (ID verification & secure authentication)
 
-Laravel
+## ⚙️ Installation
 
-MySQL
+### Front-end Setup
 
-Real-time Communication:
+1. Clone the repository and navigate to the front-end directory:
+    ```bash
+    git clone https://github.com/yourusername/healthcare-management-system.git
+    cd healthcare-management-system/frontend
+    ```
 
-Stream.io (Chat & Video)
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-Pusher (Notifications)
+3. Start the development server:
+    ```bash
+    npm start
+    ```
+   The front-end application will be available at `http://localhost:3000`.
 
-Authentication & Security:
+### Back-end Setup
 
-Laravel Analyzer (ID verification & secure authentication)
+1. Navigate to the back-end directory:
+    ```bash
+    cd ../backend
+    ```
 
-⚙️ Installation
+2. Install PHP dependencies using Composer:
+    ```bash
+    composer install
+    ```
 
-Front-end Setup
+3. Copy the example environment file and configure your variables:
+    ```bash
+    cp .env.example .env
+    ```
 
-Clone the repository and navigate to the front-end directory:
+4. Edit the `.env` file to update your database credentials and other settings.
 
-git clone https://github.com/yourusername/healthcare-management-system.git
-cd healthcare-management-system/frontend
+5. Generate the application key:
+    ```bash
+    php artisan key:generate
+    ```
 
-Install dependencies:
+6. Run the database migrations:
+    ```bash
+    php artisan migrate
+    ```
 
-npm install
+7. Start the Laravel development server:
+    ```bash
+    php artisan serve --port=8000
+    ```
 
-Start the development server:
+8. Run the queue worker (for background jobs):
+    ```bash
+    php artisan queue:work
+    ```
 
-npm start
+9. Run the scheduler (to handle scheduled tasks):
+    ```bash
+    php artisan schedule:work
+    ```
+   The back-end API will now be running at `http://localhost:8000`.
 
-The front-end application will be available at http://localhost:3000.
+---
 
-Back-end Setup
+## 🚀 Running the Application
 
-Navigate to the back-end directory:
-
-cd ../backend
-
-Install PHP dependencies using Composer:
-
-composer install
-
-Copy the example environment file and configure your variables:
-
-cp .env.example .env
-
-Edit the .env file to update your database credentials and other settings.
-
-Generate the application key:
-
-php artisan key:generate
-
-Run the database migrations:
-
-php artisan migrate
-
-Start the Laravel development server:
-
-php artisan serve --port=8000
-
-Run the queue worker (for background jobs):
-
-php artisan queue:work
-
-Run the scheduler (to handle scheduled tasks):
-
-php artisan schedule:work
-
-The back-end API will now be running at http://localhost:8000.
-
-🚀 Running the Application
-
-Front-end: Visit http://localhost:3000 to use the React application.
-
-Back-end API: Access the API at http://localhost:8000/api.
+- **Front-end**: Visit `http://localhost:5174` to use the React application.
+- **Back-end API**: Access the API at `http://localhost:8000/api`.
 
 📌 Ensure the front-end is configured with the correct API base URL in case of changes.
 
-📂 Project Structure
+---
+
+## 📂 Project Structure
 
 healthcare-management-system/
 ├── frontend/  # React.js + Tailwind CSS front-end
@@ -144,27 +153,33 @@ healthcare-management-system/
 │   └── README.md  # Back-end specific instructions
 └── README.md  # This file
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
 
 We welcome contributions! Follow these steps to contribute:
 
-1️⃣ Fork the repository.2️⃣ Create a new branch for your feature or bug fix:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+3. Commit your changes with clear messages:
+    ```bash
+    git commit -am 'Add some feature'
+    ```
+4. Push to your branch:
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+5. Open a Pull Request describing your changes.
 
-git checkout -b feature/your-feature-name
+---
 
-3️⃣ Commit your changes with clear messages:
+## ⚠️ License / Disclaimer
 
-git commit -am 'Add some feature'
+❗ **Disclaimer**: This project is a graduation project from the Faculty of Engineering at Palestine Technical University (Khadoorie) and is not licensed for public reuse. All rights are reserved for academic purposes only.
 
-4️⃣ Push to your branch:
+---
 
-git push origin feature/your-feature-name
-
-5️⃣ Open a Pull Request describing your changes.
-
-⚠️ License / Disclaimer
-
-❗ Disclaimer: This project is a graduation project from the Faculty of Engineering at Palestine Technical University (Khadoorie) and is not licensed for public reuse. All rights are reserved for academic purposes only.
-
-🎉 Enjoy building and enhancing the Healthcare Digital Management System. Let’s transform digital health together!
-
+🎉 **Enjoy building and enhancing the Healthcare Digital Management System. Let’s transform digital health together!**
