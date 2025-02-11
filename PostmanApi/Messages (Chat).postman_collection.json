@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "cd1c5fa3-dbc8-4ce2-9e80-d6acfe4f15a1",
+		"name": "Messages (Chat)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://planetary-sunset-839501.postman.co/workspace/HealthCare~ffbd37f1-21af-452d-a890-2ef9fa2a8207/collection/28169960-cd1c5fa3-dbc8-4ce2-9e80-d6acfe4f15a1?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "send message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "10|3OjSCQ3QdkHKNXtxfXjoyXOyNsMoZrP7U6JOMy5yf8b10e4c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "body",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "recipient_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "sender_id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "recipient_type",
+							"value": "doctor",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/messages",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update message",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "body",
+							"value": "test33",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/messages/1?",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"messages",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/messages",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get specific message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/messages/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"messages",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "chat for doctor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/doctors/3/chat",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						"3",
+						"chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|1GTgvpOZ34rqs2jHMCUenRxUfvMfXGi7yGhbXCVab4cc44ce",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/video-call/request/80",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"video-call",
+						"request",
+						"80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/generate-token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"generate-token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

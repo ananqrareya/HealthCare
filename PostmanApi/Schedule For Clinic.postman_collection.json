@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "70ea08c6-781f-480b-aaa2-886dae687bd9",
+		"name": "Schedule For Clinic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://planetary-sunset-839501.postman.co/workspace/HealthCare~ffbd37f1-21af-452d-a890-2ef9fa2a8207/collection/28169960-70ea08c6-781f-480b-aaa2-886dae687bd9?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "get schedule for clinic",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/doctors/1/clinics/11/schedule",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						"1",
+						"clinics",
+						"11",
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update schedule for clinic",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "start_time",
+							"value": "2024-12-07 10:01:37",
+							"type": "text"
+						},
+						{
+							"key": "end_time",
+							"value": "2024-12-07 10:42:37",
+							"type": "text"
+						},
+						{
+							"key": "available",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/doctors/3/clinics/10/schedule/162",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"doctors",
+						"3",
+						"clinics",
+						"10",
+						"schedule",
+						"162"
+					],
+					"query": [
+						{
+							"key": "day",
+							"value": "Sunday",
+							"disabled": true
+						},
+						{
+							"key": "start_time",
+							"value": "22-1-2024 3:30:33",
+							"disabled": true
+						},
+						{
+							"key": "end_time",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

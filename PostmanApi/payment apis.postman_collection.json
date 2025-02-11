@@ -1,0 +1,32 @@
+{
+	"info": {
+		"_postman_id": "0e423a1d-77c7-4170-a8e4-f851f6e46531",
+		"name": "payment apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://planetary-sunset-839501.postman.co/workspace/HealthCare~ffbd37f1-21af-452d-a890-2ef9fa2a8207/collection/28169960-0e423a1d-77c7-4170-a8e4-f851f6e46531?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "get invoice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/users/100/invoice/in_1QfF59J5NM97aWqMHkwKusCx",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"100",
+						"invoice",
+						"in_1QfF59J5NM97aWqMHkwKusCx"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

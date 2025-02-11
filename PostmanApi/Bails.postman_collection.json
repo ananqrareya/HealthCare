@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "4626e9f9-5a95-4a21-988c-4bf16a6909a4",
+		"name": "Bails",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://planetary-sunset-839501.postman.co/workspace/HealthCare~ffbd37f1-21af-452d-a890-2ef9fa2a8207/collection/28169960-4626e9f9-5a95-4a21-988c-4bf16a6909a4?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "bails for patient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/patients/10/bails",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"patients",
+						"10",
+						"bails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bails for specific patient in doctor dashboard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/doctors/1/patients/100/bails",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						"1",
+						"patients",
+						"100",
+						"bails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "download bail as pdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/bails/24/download/invoice",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"bails",
+						"24",
+						"download",
+						"invoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/appointments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

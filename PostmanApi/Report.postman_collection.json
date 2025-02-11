@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "b7f2b031-9078-457e-815e-45b3ceceb554",
+		"name": "Report",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://planetary-sunset-839501.postman.co/workspace/HealthCare~ffbd37f1-21af-452d-a890-2ef9fa2a8207/collection/28169960-b7f2b031-9078-457e-815e-45b3ceceb554?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "store report file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "doctor_id",
+							"value": "112",
+							"type": "text"
+						},
+						{
+							"key": "patient_id",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "report_date",
+							"value": "2025-01-22",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/mac/Downloads/output.png"
+						},
+						{
+							"key": "appointment_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/reports",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"reports"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

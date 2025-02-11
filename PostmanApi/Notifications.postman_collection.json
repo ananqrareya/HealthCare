@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "9992d83f-7eac-4feb-8d4f-b90efe4caa56",
+		"name": "Notifications",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://planetary-sunset-839501.postman.co/workspace/HealthCare~ffbd37f1-21af-452d-a890-2ef9fa2a8207/collection/28169960-9992d83f-7eac-4feb-8d4f-b90efe4caa56?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "get notifications",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "171|mDGAvaax0vbZcYCOIzcvCl0WJXRDCXObW2Zequ7d7d17c055",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/notifications",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get unread notifications",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "171|mDGAvaax0vbZcYCOIzcvCl0WJXRDCXObW2Zequ7d7d17c055",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/notifications/unread",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"notifications",
+						"unread"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get read notifications",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "171|mDGAvaax0vbZcYCOIzcvCl0WJXRDCXObW2Zequ7d7d17c055",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/notifications/read",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"notifications",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "makeRead Notifications",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "171|mDGAvaax0vbZcYCOIzcvCl0WJXRDCXObW2Zequ7d7d17c055",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/notifications/ada4f109-0841-47ae-a41a-1fddf0ffa5aa/makeRead",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"notifications",
+						"ada4f109-0841-47ae-a41a-1fddf0ffa5aa",
+						"makeRead"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "makeRead All Notifications",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "171|mDGAvaax0vbZcYCOIzcvCl0WJXRDCXObW2Zequ7d7d17c055",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/notifications",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

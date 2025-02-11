@@ -1,0 +1,714 @@
+{
+	"info": {
+		"_postman_id": "190b8a00-a7c9-4be5-9f98-44631e91a586",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://planetary-sunset-839501.postman.co/workspace/HealthCare~ffbd37f1-21af-452d-a890-2ef9fa2a8207/collection/28169960-190b8a00-a7c9-4be5-9f98-44631e91a586?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "Doctor",
+			"item": [
+				{
+					"name": "register doctor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "saleh",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "zetawi",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "saleh2233et",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "zetawisaleh@gmail.comt",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0597376520",
+									"type": "text"
+								},
+								{
+									"key": "speciality",
+									"value": "test doctor ",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2000-3-3",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "id_number",
+									"value": "445533445534",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/doctor/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"doctor",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/update-email",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"update-email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Face Verificaton",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "reference",
+									"type": "file",
+									"src": "/Users/mac/Downloads/WhatsApp Image 2024-12-17 at 19.25.44.jpeg"
+								},
+								{
+									"key": "face",
+									"type": "file",
+									"src": "/Users/mac/Downloads/WhatsApp Image 2024-12-17 at 19.26.27.jpeg"
+								},
+								{
+									"key": "user_id",
+									"value": "100\n",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8005/api/face/verification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8005",
+							"path": [
+								"api",
+								"face",
+								"verification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Scan Identity Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_card",
+									"type": "file",
+									"src": "/Users/mac/Downloads/IMG_7469.jpg"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/scan",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"scan"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "register patient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "saleh",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "zetawi",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "salehh100224",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "salehzetawi2@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0569522815",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "id_number",
+									"value": "403860398224",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2002-01-11",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "blood_type",
+									"value": "A-",
+									"type": "text"
+								},
+								{
+									"key": "emergency_contact_name",
+									"value": "d",
+									"type": "text"
+								},
+								{
+									"key": "emergency_contact_phone",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/patient/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"patient",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patient register verification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "reference",
+									"type": "file",
+									"src": "/Users/mac/Downloads/anan.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/patient/verification",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"patient",
+								"verification"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Forget Password",
+			"item": [
+				{
+					"name": "Send OTP to Forget Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/forget-password/send-otp",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"forget-password",
+								"send-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate Reset Password Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/forget-password/generate-token",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"forget-password",
+								"generate-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/forget-password/reset-password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"forget-password",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login (getToken)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `",
+							"<style type=\"text/css\">",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}",
+							"    .tftable tr {background-color:#ffffff;}",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}",
+							"    .tftable tr:hover {background-color:#e0ffff;}",
+							"</style>",
+							"",
+							"<table class=\"tftable\" border=\"1\">",
+							"    <tr>",
+							"        <th>ID</th>",
+							"        <th>Role ID</th>",
+							"        <th>First Name</th>",
+							"        <th>Last Name</th>",
+							"        <th>Username</th>",
+							"        <th>Email</th>",
+							"        <th>Phone</th>",
+							"        <th>Is Active</th>",
+							"        <th>Email Verified At</th>",
+							"        <th>Created At</th>",
+							"        <th>Updated At</th>",
+							"        <th>Name</th>",
+							"        <th>Token</th>",
+							"    </tr>",
+							"    <tr>",
+							"        <td>{{response.user.id}}</td>",
+							"        <td>{{response.user.role_id}}</td>",
+							"        <td>{{response.user.first_name}}</td>",
+							"        <td>{{response.user.last_name}}</td>",
+							"        <td>{{response.user.username}}</td>",
+							"        <td>{{response.user.email}}</td>",
+							"        <td>{{response.user.phone}}</td>",
+							"        <td>{{response.user.is_active}}</td>",
+							"        <td>{{response.user.email_verified_at}}</td>",
+							"        <td>{{response.user.created_at}}</td>",
+							"        <td>{{response.user.updated_at}}</td>",
+							"        <td>{{response.user.name}}</td>",
+							"        <td>{{response.token}}</td>",
+							"    </tr>",
+							"</table>",
+							"`;",
+							"",
+							"function constructVisualizerPayload() {",
+							"    return { response: pm.response.json() }",
+							"}",
+							"",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "anan20012",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "s100200300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7|iG0AmEGBhYCH9KrlEEzEgDuW43XEFjzHqsVPewuNb6386708",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resend Email OTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "89",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/resend-email-otp",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"resend-email-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resend Phone OTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "99",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "235706",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/resend-phone-otp",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"resend-phone-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "88",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "106232",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/verify-email",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"verify-email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Phone",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "91",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "393500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/verify-phone?",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"verify-phone"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset password for auth user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "72|TryMoMoZFcE56ZSzc7qG9aVW03LhWb1xndrfvsJ7da1d5125",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "old_password",
+							"value": "1002003000",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "10203040",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "10203040",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "TryMoMoZFcE56ZSzc7qG9aVW03LhWb1xndrfvsJ7da1d5125",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/reset/password",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"reset",
+						"password"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

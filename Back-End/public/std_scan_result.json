@@ -1,0 +1,30 @@
+{
+    "success": true,
+    "transactionId": "dba79637cbef408eacc25cb9da020f97",
+    "outputImage": {
+        "front": "https://api2-us2.idanalyzer.com/image/dba79637cbef408eacc25cb9da020f97/7f0f2247ebff730d7c82125cb77c14bcf6b13e585f6fd6eff133ffb3d5d2b815/front.jpg"
+    },
+    "warning": [
+        {
+            "code": "UNRECOGNIZED_DOCUMENT",
+            "description": "Document not recognized.",
+            "severity": "high",
+            "confidence": 1,
+            "decision": "reject"
+        },
+        {
+            "code": "IMAGE_FORGERY",
+            "description": "The document image possibly contains forged elements which warrants a manual review or rejection.",
+            "severity": "high",
+            "confidence": 0.9338420629501343,
+            "decision": "review"
+        }
+    ],
+    "profileId": "security_medium",
+    "reviewScore": 1,
+    "rejectScore": 1,
+    "decision": "reject",
+    "quota": 5,
+    "credit": 92,
+    "executionTime": 1.265202371
+}

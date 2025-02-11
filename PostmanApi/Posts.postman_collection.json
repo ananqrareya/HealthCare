@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "cf10d20d-8c77-4748-a890-a4909ce7688e",
+		"name": "Posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://planetary-sunset-839501.postman.co/workspace/HealthCare~ffbd37f1-21af-452d-a890-2ef9fa2a8207/collection/28169960-cf10d20d-8c77-4748-a890-a4909ce7688e?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "Get Comments  For Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "8|dCuxmXdACAPwlwu44n38MQgTywS2dX7cp92kjXlH329a5a2b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/posts/4/comments",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"4",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "8|dCuxmXdACAPwlwu44n38MQgTywS2dX7cp92kjXlH329a5a2b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/posts/4/comments/11",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"4",
+								"comments",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "8|dCuxmXdACAPwlwu44n38MQgTywS2dX7cp92kjXlH329a5a2b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "content",
+									"value": "nice",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/posts/4/comments",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"4",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "8|dCuxmXdACAPwlwu44n38MQgTywS2dX7cp92kjXlH329a5a2b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "content",
+									"value": "nice 3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/posts/4/comments/6",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"4",
+								"comments",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "8|dCuxmXdACAPwlwu44n38MQgTywS2dX7cp92kjXlH329a5a2b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/posts/5/comments/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"posts",
+								"5",
+								"comments",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Posts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "165|13G7ddMMJmwg5AseGncpvwXtLKbmR36sFTpeA5Tc22a411f7",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/posts",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Posts For Doctor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "8|dCuxmXdACAPwlwu44n38MQgTywS2dX7cp92kjXlH329a5a2b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/doctors/3/posts",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						"3",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "8|dCuxmXdACAPwlwu44n38MQgTywS2dX7cp92kjXlH329a5a2b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/posts/4",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"posts",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "8|dCuxmXdACAPwlwu44n38MQgTywS2dX7cp92kjXlH329a5a2b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "content",
+							"value": "hellowworld",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/doctors/3/posts",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						"3",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "8|dCuxmXdACAPwlwu44n38MQgTywS2dX7cp92kjXlH329a5a2b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "content",
+							"value": "tesst update 44894",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/doctors/3/posts/6",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						"3",
+						"posts",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delet Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "8|dCuxmXdACAPwlwu44n38MQgTywS2dX7cp92kjXlH329a5a2b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/posts/5",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"posts",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

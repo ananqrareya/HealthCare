@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* في ملف CSS مخصص (مثل style.css) */
+.custom-margin {
+    --tw-space-x-reverse: 0;
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.custome-space{
+    right: -60px;
+}
+.list-booking ol {
+    direction: rtl;
+    text-align: right;
+}
+.list-booking ul{
+        direction: rtl;
+            text-align: right;
+}
+
+@layer utilities {
+
+    /* شريط التمرير */
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+        /* عرض شريط التمرير */
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #4a5568;
+        /* لون مقبض التمرير */
+        border-radius: 4px;
+        /* زوايا المقبض */
+        border: 2px solid #edf2f7;
+        /* إطار حول المقبض */
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #2d3748;
+        /* لون المقبض عند التمرير */
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background-color: #edf2f7;
+        /* لون مسار التمرير */
+        border-radius: 4px;
+        /* زوايا المسار */
+    }
+}

@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "255e168d-7339-4a8c-84f6-b91168bb1533",
+		"name": "Online Schedule",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://planetary-sunset-839501.postman.co/workspace/HealthCare~ffbd37f1-21af-452d-a890-2ef9fa2a8207/collection/28169960-255e168d-7339-4a8c-84f6-b91168bb1533?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "get online schedule for doctor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/doctors/11/online-schedule/view",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						"11",
+						"online-schedule",
+						"view"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update online schedule for doctor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76|7Kb1rEzkXKUnVlW60rNYuDPZlQHOxAlkTqbBRFIU34ebfa17",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/doctors/11/online-schedule/6/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"doctors",
+						"11",
+						"online-schedule",
+						"6",
+						"update"
+					],
+					"query": [
+						{
+							"key": "day",
+							"value": "Sunday",
+							"disabled": true
+						},
+						{
+							"key": "start_time",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "end_time",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "toggle online  appointment status",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/doctors/14/online-schedule/toggle",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						"14",
+						"online-schedule",
+						"toggle"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

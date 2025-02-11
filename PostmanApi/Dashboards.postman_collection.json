@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "eaeae239-5f4f-4661-bbbb-ae4091a24da8",
+		"name": "Dashboards",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://planetary-sunset-839501.postman.co/workspace/HealthCare~ffbd37f1-21af-452d-a890-2ef9fa2a8207/collection/28169960-eaeae239-5f4f-4661-bbbb-ae4091a24da8?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "Admin Dashboard",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76|7Kb1rEzkXKUnVlW60rNYuDPZlQHOxAlkTqbBRFIU34ebfa17",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/admin/dashboard",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doctor Dashboard",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "76|7Kb1rEzkXKUnVlW60rNYuDPZlQHOxAlkTqbBRFIU34ebfa17",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/admin/dashboard",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

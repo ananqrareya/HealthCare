@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "laravel-echo": "^1.18.0",
+    "pusher-js": "^8.4.0-rc2"
+  },
+  "dependencies": {
+    "laravel-vite-plugin": "^1.1.1",
+    "peerjs": "^1.5.4",
+    "vite": "^6.0.7"
+  }
+}
