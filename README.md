@@ -53,9 +53,11 @@ The Healthcare Digital Management System is designed to revolutionize digital he
 **Real-time Communication:**
 - Stream.io (Chat & Video)
 - Pusher (Notifications)
+- Vonage
+- Email
 
 **Authentication & Security:**
-- Laravel Analyzer (ID verification & secure authentication)
+- ID Analyzer (ID verification & secure authentication)
 
 ## ⚙️ Installation
 
