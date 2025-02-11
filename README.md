@@ -4,6 +4,11 @@
 
 A comprehensive digital platform for healthcare management that bridges the gap between patients, doctors, pharmacies, and laboratories. This project is a graduation project from the Faculty of Engineering at Palestine Technical University (Khadoorie) and is not licensed for public reuse.
 
+### Pictures From the Site
+
+You can view pictures from the site in the [Pictures-From-On-Site folder](./Pictures-From-On-Site).
+
+
 ## 📖 Table of Contents
 
 - [Overview](#overview)
